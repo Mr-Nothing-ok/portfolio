@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+nul
+
+# Video files (large, keep out of git)
+public/*.mp4
+public/*.webm
+public/*.mov

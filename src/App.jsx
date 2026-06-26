@@ -6,8 +6,6 @@ import { useGesture } from '@use-gesture/react';
 import { Camera, Mesh, Plane, Program, Renderer, Texture, Transform } from 'ogl';
 import baffle from 'baffle';
 import { FloatingParticles, AuroraBackground, GradientOrbs, Starfield, NeonGrid, HolographicShimmer } from './AnimatedBackgrounds';
-import AnimeMascot from './components/AnimeMascot';
-
 
             // ==========================================
             // DomeGallery Implementation
@@ -1355,9 +1353,6 @@ import AnimeMascot from './components/AnimeMascot';
                 return (
                     <div className="min-h-screen bg-background text-foreground relative selection:bg-[#00ff41] selection:text-black">
                         
-                        {/* 3D Anime Mascot — persistent free-roaming overlay */}
-                        <AnimeMascot />
-
                         <audio ref={audioRef} loop src="https://archive.org/download/asha-bhosle-abhi-na-jaao-chhod-kar/Asha%20Bhosle%20-%20Abhi%20Na%20Jaao%20Chhod%20Kar.mp3" preload="auto"></audio>
                         
                         <button 
@@ -1372,7 +1367,7 @@ import AnimeMascot from './components/AnimeMascot';
                             )}
                         </button>
 
-                        <nav onMouseEnter={() => window.__mascotHover?.('nav')} className="fixed top-6 left-0 right-0 z-50 px-8 flex justify-center">
+                        <nav className="fixed top-6 left-0 right-0 z-50 px-8 flex justify-center">
                             <div className="liquid-glass rounded-full px-6 py-2.5 flex items-center justify-between gap-8 md:gap-12 backdrop-blur-xl">
                                 <span className="font-heading italic text-2xl tracking-tight">Muneeb.</span>
                                 <div className="hidden md:flex gap-8 text-sm font-medium text-white/70 font-inter">
@@ -1455,7 +1450,7 @@ import AnimeMascot from './components/AnimeMascot';
                             </motion.div>
                         </section>
 
-                        <section id="about" onMouseEnter={() => window.__mascotHover?.('about')} className="relative min-h-screen py-32 px-8 lg:px-24 border-t-2 border-white/10 flex flex-col justify-center overflow-hidden">
+                        <section id="about" className="relative min-h-screen py-32 px-8 lg:px-24 border-t-2 border-white/10 flex flex-col justify-center overflow-hidden">
                             <div className="matrix-container">
                                 <div className="matrix-pattern">
                                     {Array.from({ length: 45 }).map((_, i) => (
@@ -1547,8 +1542,8 @@ import AnimeMascot from './components/AnimeMascot';
                             </div>
                         </section>
 
-                        <section id="skills" onMouseEnter={() => window.__mascotHover?.('skills')} className="py-32 px-8 lg:px-24 relative overflow-hidden">
-                            <video autoPlay loop muted playsInline onMouseEnter={() => window.__mascotHover?.('video')} className="absolute inset-0 w-full h-full object-cover z-[1] opacity-100" src="/voice.mp4"></video>
+                        <section id="skills" className="py-32 px-8 lg:px-24 relative overflow-hidden">
+                            <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-[1] opacity-100" src="/voice.mp4"></video>
                             <div className="absolute inset-0 bg-gradient-to-b from-[#050510]/80 via-black/40 to-[#050510]/80 z-[2]"></div>
                             <div className="max-w-7xl mx-auto relative z-[10]">
                                 <div className="mb-24 flex flex-col items-center text-center relative z-10">
@@ -1599,7 +1594,7 @@ import AnimeMascot from './components/AnimeMascot';
                         </section>
 
                         <section className="relative py-32 overflow-hidden border-y-2 border-white/10 bg-[#030308]">
-                            <video autoPlay loop muted playsInline onMouseEnter={() => window.__mascotHover?.('video')} className="absolute inset-0 w-full h-full object-cover z-[1] opacity-100" src="/Tear.mp4"></video>
+                            <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-[1] opacity-100" src="/Tear.mp4"></video>
                             <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70 z-[2]"></div>
                             
                             <div className="px-8 lg:px-24 relative z-[10] flex flex-col lg:flex-row items-center gap-12">
@@ -1761,8 +1756,8 @@ import AnimeMascot from './components/AnimeMascot';
                             </div>
                         </section>
 
-                        <section id="contact" onMouseEnter={() => window.__mascotHover?.('contact')} className="py-32 px-8 lg:px-24 relative overflow-hidden border-t-2 border-white/10">
-                            <video autoPlay loop muted playsInline onMouseEnter={() => window.__mascotHover?.('video')} className="absolute inset-0 w-full h-full object-cover z-[1] opacity-100" src="/your_name.mp4"></video>
+                        <section id="contact" className="py-32 px-8 lg:px-24 relative overflow-hidden border-t-2 border-white/10">
+                            <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-[1] opacity-100" src="/your_name.mp4"></video>
                             <div className="absolute inset-0 bg-gradient-to-b from-[#050510]/80 via-black/50 to-[#050510]/80 z-[2]"></div>
                             <div className="max-w-5xl mx-auto relative z-[10]">
                                 <div className="text-center mb-16">
