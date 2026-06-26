@@ -896,7 +896,7 @@ import { FloatingParticles, AuroraBackground, GradientOrbs, Starfield, NeonGrid,
                 this.planeGeometry = new Plane(this.gl, { heightSegments: 50, widthSegments: 100 });
               }
               createMedias(items, bend = 1, textColor, borderRadius, font) {
-                const defaultItems = [ { image: "/images/ani me.png", text: "Anime" } ];
+                const defaultItems = [ { image: "./images/ani me.png", text: "Anime" } ];
                 const galleryItems = items && items.length ? items : defaultItems;
                 this.mediasImages = galleryItems.concat(galleryItems);
                 this.medias = this.mediasImages.map((data, index) => {
@@ -1012,14 +1012,14 @@ import { FloatingParticles, AuroraBackground, GradientOrbs, Starfield, NeonGrid,
             const SIGMA = 2.5;
 
             const PANEL_IMAGES = [
-                "/images/3 sweety.png",
-                "/images/ani me.png",
-                "/images/boss.png",
-                "/images/cheery.png",
-                "/images/coffee.png",
-                "/images/college correct.png",
-                "/images/college.png",
-                "/images/hand boss.png"
+                "./images/3 sweety.png",
+                "./images/ani me.png",
+                "./images/boss.png",
+                "./images/cheery.png",
+                "./images/coffee.png",
+                "./images/college correct.png",
+                "./images/college.png",
+                "./images/hand boss.png"
             ];
 
             const GRADIENT_OVERLAYS = [
@@ -1327,27 +1327,27 @@ import { FloatingParticles, AuroraBackground, GradientOrbs, Starfield, NeonGrid,
                 }, []);
 
                 const galleryItems = [
-                  { image: "/images/ani me.png", text: "Anime" },
-                  { image: "/images/boss.png", text: "Boss" },
-                  { image: "/images/cheery.png", text: "Cheery" },
-                  { image: "/images/coffee.png", text: "Coffee" },
-                  { image: "/images/college correct.png", text: "College" },
-                  { image: "/images/hand boss.png", text: "Hand" },
-                  { image: "/images/mafia.png", text: "Mafia" },
-                  { image: "/images/mirror.png", text: "Mirror" },
-                  { image: "/images/multi.png", text: "Multi" },
-                  { image: "/images/personal.png", text: "Personal" },
-                  { image: "/images/sigma.png", text: "Sigma" },
-                  { image: "/images/simple.png", text: "Simple" }
+                  { image: "./images/ani me.png", text: "Anime" },
+                  { image: "./images/boss.png", text: "Boss" },
+                  { image: "./images/cheery.png", text: "Cheery" },
+                  { image: "./images/coffee.png", text: "Coffee" },
+                  { image: "./images/college correct.png", text: "College" },
+                  { image: "./images/hand boss.png", text: "Hand" },
+                  { image: "./images/mafia.png", text: "Mafia" },
+                  { image: "./images/mirror.png", text: "Mirror" },
+                  { image: "./images/multi.png", text: "Multi" },
+                  { image: "./images/personal.png", text: "Personal" },
+                  { image: "./images/sigma.png", text: "Sigma" },
+                  { image: "./images/simple.png", text: "Simple" }
                 ];
 
                 const domeImages = [
-                  "/images/3 sweety.png",
-                  "/images/swap.png",
-                  "/images/reject.png",
-                  "/images/ani me.png",
-                  "/images/boss.png",
-                  "/images/cheery.png"
+                  "./images/3 sweety.png",
+                  "./images/swap.png",
+                  "./images/reject.png",
+                  "./images/ani me.png",
+                  "./images/boss.png",
+                  "./images/cheery.png"
                 ];
 
                 return (
@@ -1471,7 +1471,7 @@ import { FloatingParticles, AuroraBackground, GradientOrbs, Starfield, NeonGrid,
                                     <div className="flex flex-col items-center relative animate-float-tilt">
                                         <div className="w-72 h-[22rem] rounded-[2.5rem] p-3 liquid-glass relative mb-6 card-3d-hover animate-border-glow">
                                              <div className="w-full h-full rounded-[2rem] bg-black border border-white/10 overflow-hidden relative group">
-                                                <div className="absolute inset-0 bg-[url('/images/personal.png')] bg-cover bg-center group-hover:scale-110 transition-transform duration-1000 ease-out"></div>
+                                                <div className="absolute inset-0 bg-[url('./images/personal.png')] bg-cover bg-center group-hover:scale-110 transition-transform duration-1000 ease-out"></div>
                                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                                                 {/* Shimmer overlay on hover */}
                                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
@@ -1543,7 +1543,7 @@ import { FloatingParticles, AuroraBackground, GradientOrbs, Starfield, NeonGrid,
                         </section>
 
                         <section id="skills" className="py-32 px-8 lg:px-24 relative overflow-hidden">
-                            <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-[1] opacity-100" src="/voice.mp4"></video>
+                            <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-[1] opacity-100" src="./voice.mp4"></video>
                             <div className="absolute inset-0 bg-gradient-to-b from-[#050510]/80 via-black/40 to-[#050510]/80 z-[2]"></div>
                             <div className="max-w-7xl mx-auto relative z-[10]">
                                 <div className="mb-24 flex flex-col items-center text-center relative z-10">
@@ -1594,7 +1594,7 @@ import { FloatingParticles, AuroraBackground, GradientOrbs, Starfield, NeonGrid,
                         </section>
 
                         <section className="relative py-32 overflow-hidden border-y-2 border-white/10 bg-[#030308]">
-                            <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-[1] opacity-100" src="/Tear.mp4"></video>
+                            <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-[1] opacity-100" src="./Tear.mp4"></video>
                             <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70 z-[2]"></div>
                             
                             <div className="px-8 lg:px-24 relative z-[10] flex flex-col lg:flex-row items-center gap-12">
@@ -1649,7 +1649,7 @@ import { FloatingParticles, AuroraBackground, GradientOrbs, Starfield, NeonGrid,
                                     display: 'block',
                                 }}
                             >
-                                <source src="/5cm_fixed.mp4" type="video/mp4" />
+                                <source src="./5cm_fixed.mp4" type="video/mp4" />
                             </video>
 
                             {/* CircularGallery on top — its WebGL canvas has alpha:true so video shows through */}
@@ -1667,7 +1667,7 @@ import { FloatingParticles, AuroraBackground, GradientOrbs, Starfield, NeonGrid,
                         <section id="timeline" className="py-32 px-8 lg:px-24 relative overflow-hidden">
                             {/* weak.mp4 — fully opaque background video */}
                             <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-[1] opacity-100">
-                                <source src="/weak.mp4?v=2" type="video/mp4" />
+                                <source src="./weak.mp4?v=2" type="video/mp4" />
                             </video>
 
                             <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 relative z-[10]">
@@ -1757,7 +1757,7 @@ import { FloatingParticles, AuroraBackground, GradientOrbs, Starfield, NeonGrid,
                         </section>
 
                         <section id="contact" className="py-32 px-8 lg:px-24 relative overflow-hidden border-t-2 border-white/10">
-                            <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-[1] opacity-100" src="/your_name.mp4"></video>
+                            <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-[1] opacity-100" src="./your_name.mp4"></video>
                             <div className="absolute inset-0 bg-gradient-to-b from-[#050510]/80 via-black/50 to-[#050510]/80 z-[2]"></div>
                             <div className="max-w-5xl mx-auto relative z-[10]">
                                 <div className="text-center mb-16">
