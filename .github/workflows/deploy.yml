@@ -22,7 +22,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - run: npm ci
@@ -40,4 +40,4 @@ jobs:
     needs: build
     steps:
       - id: deployment
-        uses: actions/actions-deploy-pages@v4
+        uses: actions/deploy-pages@v4
